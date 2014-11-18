@@ -8,5 +8,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+
+    <script>
+    //var myAge = 20;
+    //var myName = "Rich Ramsland";
+    var myName = prompt("What is your name?");
+    if(myName===""){
+    	myName="Rich Ramsland";
+    }
+    var myAge= prompt("How old are you?");
+    if(myAge==="")
+    {
+    	myAge="20";
+    }
+    var birthYear=2014-myAge;
+    console.log("Hello, my name is "+myName+", and I am "+myAge+" years old");
+    
+    console.log("I was born in the year "+birthYear);
+    console.log("It is SO cold outside");
+
+
+	console.log(5===5);
+	console.log(10 > 1);
+	console.log(4 <=5);
+
+	var ageLimit=30;
+	if(myAge>ageLimit){
+		console.log("I'm older than "+ageLimit);
+	}
+	else
+	{
+		console.log("I'm younger than "+ageLimit);
+	}
+
+	var shoutingName = myName.toUpperCase();
+	console.log(shoutingName);
+	var soLong = 'Supercalifragilisticexpialidocious';
+	console.log(soLong.length);
+
+	var DesignHaus = ["Rich", "Justine", "Anthony", "Kayla", "Justin"]
+
+	console.log("I am a member of the super-awesome web-design team Design Haus. Our team members include:")
+
+	for(var i=0;i<DesignHaus.length;i++)
+	{
+		console.log(DesignHaus[i]);
+	}
+    </script>
+
     </body>
 </html>
